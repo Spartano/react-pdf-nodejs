@@ -25,7 +25,6 @@ export const ImageDocument = () => {
             <Text style={{ fontSize: 12, textAlign: "left", marginLeft: "16px" }}>Images</Text>
 
             <Image
-              debug={true}
               style={{ width: 24, height: 24 }}
               source={{
                 uri: "https://i.imgur.com/TrAnhbd.png",
@@ -33,16 +32,8 @@ export const ImageDocument = () => {
               }}
             />
 
-            <Image
-              debug={true}
-              style={{ width: 24, height: 24 }}
-              source={"https://i.imgur.com/TrAnhbd.png"}
-            />
-            <Image
-              debug={true}
-              style={{ width: 24, height: 24 }}
-              source={__dirname + "/images/facebook.png"}
-            />
+            <Image style={{ width: 24, height: 24 }} source={"https://i.imgur.com/TrAnhbd.png"} />
+            <Image style={{ width: 24, height: 24 }} source={__dirname + "/images/facebook.png"} />
           </View>
         </View>
       </Page>

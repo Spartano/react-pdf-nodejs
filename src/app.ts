@@ -6,6 +6,9 @@ const app = express();
 
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.sendFile("./index.html", { root: __dirname });
+});
 app.use(printRouter);
 
 app.all("*", (req, res) => {
